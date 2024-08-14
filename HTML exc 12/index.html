@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXC 12</title>
+</head>
+<body>
+    <header>
+        <h1>My favorite youtube video</h1>
+    </header>
+
+    <section>
+        <a href="#image">Image| </a> 
+        <a href="#audio">Audio|</a> 
+        <a href="#video">Video</a>  
+    </section>
+    <br>
+    <section>
+        
+        <div>
+            <img  
+                id="image"
+                srcset="./img/sunflower-small 480w,./img/sunflower-medium.jpeg 800w ,./img/sunflower-large.jpeg 1200w "
+                sizes="(max-width: 400px) 480px, (max-width: 1200px) 800px,1200px"
+                alt="sunflower image"
+            />
+        </div>
+
+        <div>
+            <h2>Luca film audio trailer</h2>
+            <audio id="audio"  controls>
+                <source src="./img/LucaAudio.mp3" type="audio/mp3">
+                <source src="./img/LucaAudio.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div>
+            <h2>Luca film video trailer</h2>
+            <video id="video" width="320" height="240" controls>
+            <source src="./img/LUCA.mp4" type="video/mp4">
+            <source src="./img/LUCA.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+</body>
+</html>
